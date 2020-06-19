@@ -1,6 +1,6 @@
 # Tiny env
 
-Tiny env is a small deno module for demonstrative purposes, however, it's ready to be used in production.
+Tiny env injects the configuration held by your `.env` file to the Deno environment.
 
 ## Usage
 
