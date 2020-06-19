@@ -3,6 +3,5 @@ export type ConfigMap = {
 };
 
 export type ConfigParams = {
-  safe: boolean; // throw exception if config parameter is undefined
   dotEnvPath?: string;
 };

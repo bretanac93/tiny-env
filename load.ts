@@ -3,7 +3,6 @@ import { ConfigParams } from './types.ts';
 
 const defaultConf: ConfigParams = {
   dotEnvPath: `${Deno.cwd()}/.env`,
-  safe: false,
 };
 
 export default (params: ConfigParams = defaultConf) => {
