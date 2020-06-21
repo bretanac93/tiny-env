@@ -1,14 +1,10 @@
 # Tiny env
 
-Tiny env is a small deno package for demonstrative purposes, however, it's production ready and open for PRs.
-
-## Installation
-
-Import the package in your project using the repo url.
+Tiny env injects the configuration held by your `.env` file to the Deno environment.
 
 ## Usage
 
-At the top of your project, call the `load()` function included in the package as it shows below.
+At the top of your project, call the `load()` function included in the module as it shows below.
 
 ```typescript
 
@@ -17,7 +13,11 @@ load();
 
 ```
 
-After that, the environment variables inside of the `.env` file at the root of the project will be put into the Deno environment and accessible in the standard way.
+After that, the environment variables inside of the `.env` file at the root of your project will be put into the Deno environment and accessible in the standard way (check the example below).
+
+```typescript
+Deno.env.get('APP_NAME')
+```
 
 ## Configuration
 
@@ -34,4 +34,4 @@ load({
 
 ## Run
 
-In order to make this work, the package needs access to the filesystem, run the project with `--allow-read` and `--allow-env` flags.
+In order to make this work, the module needs access to the filesystem and the environment, please run your project with `--allow-read` and `--allow-env` flags to allow this.
