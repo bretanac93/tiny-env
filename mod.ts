@@ -1,1 +1,1 @@
-export * from './load.ts';
+export * as load from './load.ts';

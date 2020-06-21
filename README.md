@@ -12,7 +12,7 @@ At the top of your project, call the `load()` function included in the package a
 
 ```typescript
 
-import { load } from 'https://github.com/bretanac93/tiny-env/mod.ts'
+import { load } from 'https://deno.land/x/tiny_env/mod.ts'
 load();
 
 ```
