@@ -1,6 +1,6 @@
 import { assertEquals } from 'https://deno.land/std/testing/asserts.ts';
 
-import load from './load.ts';
+import { load } from './load.ts';
 
 Deno.test('Should load env variables from .env to app env', () => {
   load();

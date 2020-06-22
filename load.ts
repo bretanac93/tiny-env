@@ -5,7 +5,7 @@ const defaultConf: ConfigParams = {
   dotEnvPath: `${Deno.cwd()}/.env`,
 };
 
-export default (params: ConfigParams = defaultConf) => {
+export function load(params: ConfigParams = defaultConf) {
   const config = parse(params.dotEnvPath as string);
   Object.keys(config).forEach((configKey) => {
     if (!Deno.env.get(configKey)) {

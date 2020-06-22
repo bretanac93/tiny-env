@@ -5,9 +5,11 @@ export default (filePath: string) => {
 
   const result: ConfigMap = {};
   rawContent.split('\n').forEach((item) => {
-    const [key, value] = item.split('=');
-    result[key] = value;
+    if (!item.startsWith('#')) {
+      const [key, value] = item.split('=');
+      result[key] = value;
+    }
   });
 
   return result;
-}
+};
