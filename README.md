@@ -25,7 +25,7 @@ If you have your `.env` somewhere else, you can define a custom path at the mome
 
 ```typescript
 
-import { load } from 'https://github.com/bretanac93/tiny-env/mod.ts'
+import { load } from 'https://deno.land/x/tiny_env/mod.ts'
 load({
   dotEnvPath: '/custom/path/to/dotenv/file'
 });
