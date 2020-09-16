@@ -5,7 +5,7 @@ export default (filePath: string) => {
 
   const result: ConfigMap = {};
   rawContent.split('\n').forEach((item) => {
-    if (!item.startsWith('#')) {
+    if (!item.trim().startsWith('#')) {
       const [key, value] = item.split('=');
       result[key] = value;
     }
